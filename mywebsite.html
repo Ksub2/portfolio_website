@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keshav Dahal | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        
+        <div class="container">
+            
+            <h1>Keshav Dahal</h1>
+            
+            <nav>
+                
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <button id="darkmodeToggle" aria-label="Toggle dark mode">
+        <img src="image/dark-mode-6682.svg" alt="Dark Mode" class="darkmodeIcon">
+        <!-- <img src="image/sun-8726.svg" alt="White Mode" class="sun-icon"> -->
+    </button>
+    
+    <section id="about">
+        
+        <div class="container">
+            <img src="image/myimage" alt="My Profile">
+            <h2>About Me</h2>
+            <p>I am currently pursuing a Bachelor's degree in Computer Science and Information Technology (BSc CSIT) at Sagarmatha College of Science and Technology, where I am in my 7th semester. Over the course of my studies, I have gained a strong foundation in various programming languages and web technologies, with key skills in Python, HTML, CSS, and React JS.
+
+                My true passion lies in Python programming, and I aspire to continually improve my skills in this area to become a proficient Python developer. I'm driven by a deep interest in building efficient and scalable solutions, and I look forward to contributing to impactful projects in the tech industry.</p>
+                
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Registration Login Page</h3>
+                <p>A project that is built using Python (tkinter library) and My SQL to show my skills</p>
+                <a href="https://github.com/Ksub2/Registration_Login_Page"target="_blank">GitHub Link</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2:Screen Recording System</h3>
+                <p>A Project that is built using Python Programming</p>
+                <a href="https://github.com/Ksub2/Screen_Recording_system"target="_blank">GitHub Link</a>
+            </div>
+             <div class="project-item">
+                <h3>Project 3: Weather Forecasting System</h3>
+                <p>An Important project that is based on showing the current temperature of the current location using Python Program</p>
+                <a href="https://github.com/Ksub2/Weather_forecasting"target="_blank">GitHub Link</a>
+             </div>
+            <div class="project-item">
+                 <h3>Project 4: Number Guessing System</h3>
+                 <p>A game where the user guesses the number on their own.</p>
+                 <a href="https://github.com/Ksub2/guess_number"target="_blank">GitHub Link</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p class="resume-text">click the button below to download my resume:</p> 
+            <a href="keshab_resume22.pdf" download>
+               <button>Download Resume</button> 
+            </a>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form action="message.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Keshav Dahal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('section');
+    
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const triggerPoint = window.innerHeight * 0.75;
+    
+                if (sectionTop < triggerPoint) {
+                    section.classList.add('visible');
+                } else {
+                    section.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/Ksub2"target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/keshab-dahal2/"target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.facebook.com/keshab.KRD/"target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://x.com/Keshab_KRD"target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/keshab_yo/"target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
